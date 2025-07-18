@@ -56,18 +56,33 @@
       margin: 4px 0;
       border-radius: 2px;
     }
-    @media(max-width: 600px) {
-      nav {
-        display: none;
-        flex-direction: column;
-        background-color: #ff3d00;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        left: 0;
-        z-index: 100;
-      }
-      nav.active {
+    
+@media(max-width: 600px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: #ff3d00;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: 200px;
+    z-index: 100;
+    border-radius: 8px;
+    padding: 10px;
+    align-items: flex-start;
+  }
+  nav.active {
+    display: flex;
+  }
+  nav a {
+    padding: 10px;
+    text-align: left;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+}
+nav.active {
         display: flex;
       }
       .menu-toggle {
@@ -421,3 +436,4 @@
 
 </body>
 </html
+                                                    
